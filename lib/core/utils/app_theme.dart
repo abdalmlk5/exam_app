@@ -59,7 +59,7 @@ abstract class AppTheme {
       // text field
       inputDecorationTheme: InputDecorationTheme(
         floatingLabelBehavior: FloatingLabelBehavior.always,
-        contentPadding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 18.h),
+        contentPadding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 16.h),
         hintStyle: AppTextStyles.gray14400,
         labelStyle: AppTextStyles.black12400,
         errorStyle: TextStyle(color: AppColors.error, fontSize: 12.sp),
@@ -68,7 +68,16 @@ abstract class AppTheme {
         enabledBorder: _border(AppColors.black30),
         focusedBorder: _border(AppColors.primary, 1.5),
         errorBorder: _border(AppColors.error),
-        focusedErrorBorder: _border(AppColors.error, 1.5),
+        focusedErrorBorder: _border(AppColors.error, 2),
+      ),
+
+      // snack bar theme
+      snackBarTheme: SnackBarThemeData(
+        behavior: SnackBarBehavior.floating,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(12.r),
+        ),
+        contentTextStyle: AppTextStyles.white16500,
       ),
     );
   }
