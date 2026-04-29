@@ -1,12 +1,12 @@
-import 'package:exam_app/config/di/di.dart';
-import 'package:exam_app/features/authentication/presentation/forget_password/cubit/forget_password_cubit.dart';
+// import 'package:exam_app/config/di/di.dart';
+// import 'package:exam_app/features/authentication/presentation/forget_password/cubit/forget_password_cubit.dart';
 // import 'package:exam_app/features/home_screen/presentation/pages/home_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
+// import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../features/authentication/presentation/forget_password/pages/email_verification_page.dart';
-import '../../features/authentication/presentation/forget_password/pages/forget_password_page.dart';
-import '../../features/authentication/presentation/forget_password/pages/reset_password_page.dart';
+// import '../../features/authentication/presentation/forget_password/pages/email_verification_page.dart';
+// import '../../features/authentication/presentation/forget_password/pages/forget_password_page.dart';
+// import '../../features/authentication/presentation/forget_password/pages/reset_password_page.dart';
 // import '../../features/exams/domain/entities/exam_entity.dart';
 // import '../../features/exams/presentation/pages/exam_details_page.dart';
 // import '../../features/exams/presentation/pages/exams_page.dart';
@@ -26,8 +26,8 @@ class AppRoutes {
   static const String examsPage = '/examsPage';
   static const String examDetailsPage = '/examDetailsPage';
 
-  static final ForgetPasswordCubit _forgetPasswordCubit =
-      getIt<ForgetPasswordCubit>();
+  // static final ForgetPasswordCubit _forgetPasswordCubit =
+  //     getIt<ForgetPasswordCubit>();
 
   static MaterialPageRoute<dynamic> onGenerateRoute(RouteSettings settings) {
     switch (settings.name) {
@@ -37,29 +37,29 @@ class AppRoutes {
       // case register:
       //   return MaterialPageRoute(builder: (_) => const RegisterPage());
 
-      case forgetPassword:
-        return MaterialPageRoute(
-          builder: (_) => BlocProvider.value(
-            value: _forgetPasswordCubit,
-            child: const ForgetPasswordPage(),
-          ),
-        );
-
-      case emailVerification:
-        return MaterialPageRoute(
-          builder: (_) => BlocProvider.value(
-            value: _forgetPasswordCubit,
-            child: const EmailVerificationPage(),
-          ),
-        );
-
-      case resetPassword:
-        return MaterialPageRoute(
-          builder: (_) => BlocProvider.value(
-            value: _forgetPasswordCubit,
-            child: const ResetPasswordPage(),
-          ),
-        );
+      // case forgetPassword:
+      //   return MaterialPageRoute(
+      //     builder: (_) => BlocProvider.value(
+      //       value: _forgetPasswordCubit,
+      //       child: const ForgetPasswordPage(),
+      //     ),
+      //   );
+      //
+      // case emailVerification:
+      //   return MaterialPageRoute(
+      //     builder: (_) => BlocProvider.value(
+      //       value: _forgetPasswordCubit,
+      //       child: const EmailVerificationPage(),
+      //     ),
+      //   );
+      //
+      // case resetPassword:
+      //   return MaterialPageRoute(
+      //     builder: (_) => BlocProvider.value(
+      //       value: _forgetPasswordCubit,
+      //       child: const ResetPasswordPage(),
+      //     ),
+      //   );
 
       // case home:
       //   return MaterialPageRoute(builder: (_) => const HomeScreen());
