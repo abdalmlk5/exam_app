@@ -35,11 +35,11 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           title: 'Exams App',
           onGenerateRoute: AppRoutes.onGenerateRoute,
-          // initialRoute: isLoggedIn
-          //     //todo: if user is logged in, return home screen
-          //     ? AppRoutes.home
-          //     //todo: if user is not logged in, return login screen
-          //     : AppRoutes.login,
+          initialRoute: isLoggedIn
+              //todo: if user is logged in, return home screen
+              ? AppRoutes.register
+              //todo: if user is not logged in, return login screen
+              : AppRoutes.login,
         );
       },
     );
