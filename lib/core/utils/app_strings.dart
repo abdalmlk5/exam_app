@@ -14,6 +14,7 @@ abstract class AppStrings {
   static const String rememberMe = 'Remember me';
   static const String forgetPasswordQuestion = 'Forget password?';
   static const String dontHaveAccount = "Don't have an account? ";
+  static const String loginSuccess = 'Login success';
 
   // Sign Up Screen
   static const String userName = 'User name';
@@ -25,6 +26,7 @@ abstract class AppStrings {
   static const String phoneNumber = 'Phone number';
   static const String enterPhoneNumber = 'Enter phone number';
   static const String alreadyHaveAccount = 'Already have an account? ';
+  static const String registerSuccess = 'Register success';
 
   // Forget Password Screen
   static const String forgetPassword = 'Forget password';

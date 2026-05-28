@@ -2,6 +2,9 @@
 // import 'package:exam_app/features/authentication/presentation/forget_password/cubit/forget_password_cubit.dart';
 // import 'package:exam_app/features/home_screen/presentation/pages/home_screen.dart';
 import 'package:flutter/material.dart';
+
+import '../../features/authentication/presentation/login/pages/login_page.dart';
+import '../../features/authentication/presentation/register/pages/register_page.dart';
 // import 'package:flutter_bloc/flutter_bloc.dart';
 
 // import '../../features/authentication/presentation/forget_password/pages/email_verification_page.dart';
@@ -31,11 +34,11 @@ class AppRoutes {
 
   static MaterialPageRoute<dynamic> onGenerateRoute(RouteSettings settings) {
     switch (settings.name) {
-      // case login:
-      //   return MaterialPageRoute(builder: (_) => const LoginPage());
+      case login:
+        return MaterialPageRoute(builder: (_) => const LoginPage());
 
-      // case register:
-      //   return MaterialPageRoute(builder: (_) => const RegisterPage());
+      case register:
+        return MaterialPageRoute(builder: (_) => const RegisterPage());
 
       // case forgetPassword:
       //   return MaterialPageRoute(
